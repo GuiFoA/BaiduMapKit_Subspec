@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BaiduMapKit_Subspec"
-  s.version      = "3.3.4"
+  s.version      = "3.4.0"
   s.summary      = "百度地图iOS SDK（CocoaPods百度地图官方库）, 支持Cocoaspods subspec"
   s.description  = <<-DESC
       百度地图iOS SDK：百度地图官方CocoaPods.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type =>"MIT", :file => "LICENSE" }
   s.authors      = { "baidu map sdk" => "409783481@qq.com" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/YiJianJun/BaiduMapKit_Subspec.git", :tag => "#{s.version}", :submodules => true }
+  s.source       = { :git => "https://github.com/BaiduLBS/BaiduMapKit.git", :tag => "#{s.version}", :submodules => true }
 
   # s.source_files = "BaiduMapKit/*.framework/Headers/*.h"
   # s.public_header_files = '#{s.source_files}' # "BaiduMapKit/*.framework/Headers/*.h"
