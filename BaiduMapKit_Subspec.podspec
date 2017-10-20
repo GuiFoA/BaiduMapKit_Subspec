@@ -4,14 +4,14 @@ Pod::Spec.new do |s|
   s.summary      = "百度地图iOS SDK（CocoaPods百度地图官方库）, 支持Cocoaspods subspec"
   s.description  = <<-DESC
       百度地图iOS SDK：百度地图官方CocoaPods.
-      百度地图iOS SDK是一套基于iOS 5.0及以上版本设备的应用程序接口，不仅提供展示地图的基本接口，还提供POI检索、路径规划、地图标注、离线地图、定位、周边雷达等丰富的LBS能力
+      百度地图iOS SDK是一套基于iOS 7.0及以上版本设备的应用程序接口，不仅提供展示地图的基本接口，还提供POI检索、路径规划、地图标注、离线地图、定位、周边雷达等丰富的LBS能力
                    DESC
   
   s.homepage     = "http://developer.baidu.com/map/index.php?title=iossdk"
   s.license      = { :type =>"MIT", :file => "LICENSE" }
   s.authors      = { "baidu map sdk" => "409783481@qq.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/YiJianJun/BaiduMapKit_Subspec.git", :tag => "#{s.version}", :submodules => true }
+  s.source       = { :git => "https://github.com/BaiduLBS/BaiduMapKit.git", :tag => "#{s.version}", :submodules => true }
 
   # s.source_files = "BaiduMapKit/*.framework/Headers/*.h"
   # s.public_header_files = '#{s.source_files}' # "BaiduMapKit/*.framework/Headers/*.h"
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Base', 'Cloud', 'Location', 'Map', 'Radar', 'Search', 'Utils'
   
   s.subspec 'Base' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
 
     ss.source_files = 'BaiduMapKit/BaiduMapAPI_Base.framework/Headers/**.h'
     ss.public_header_files = 'BaiduMapKit/BaiduMapAPI_Base.framework/Headers/**.h'
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Cloud' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
     
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Location' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
     
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Map' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
 
 
     ss.dependency 'BaiduMapKit_Subspec/Base'
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Radar' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
 
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Search' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
     
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
@@ -126,7 +126,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Utils' do |ss|
-    ss.ios.deployment_target = '5.0'
+    ss.ios.deployment_target = '7.0'
 
     ss.dependency 'BaiduMapKit_Subspec/Base'
     ss.ios.dependency 'BaiduMapKit_Subspec/Base'
