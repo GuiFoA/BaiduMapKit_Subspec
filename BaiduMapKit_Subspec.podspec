@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://developer.baidu.com/map/index.php?title=iossdk"
   s.license      = { :type =>"MIT", :file => "LICENSE" }
   s.authors      = { "baidu map sdk" => "409783481@qq.com" }
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/YiJianJun/BaiduMapKit_Subspec.git", :tag => "#{s.version}", :submodules => true }
 
   # s.source_files = "BaiduMapKit/*.framework/Headers/*.h"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
 
   s.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-  s.libraries    = "sqlite3.0", "stdc++.6.0.9"
+  s.libraries    = "sqlite3.0", "c++"
 
   s.requires_arc = true
 
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'BaiduMapKit/BaiduMapAPI_Base.framework/Headers/**.h'
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Base.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/**.h'
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
 
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Cloud.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'BaiduMapKit/BaiduMapAPI_Location.framework/Headers/**.h'
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Location.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
     ss.resources = "BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
     
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Map.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
     
 
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Radar.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'BaiduMapKit/BaiduMapAPI_Search.framework/Headers/**.h'
 
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
     
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Search.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
     
 
     ss.frameworks   =  "CoreLocation", "QuartzCore", "OpenGLES", "SystemConfiguration", "CoreGraphics", "Security", "CoreTelephony"
-    ss.libraries    = "sqlite3.0", "stdc++.6.0.9"
+    ss.libraries    = "sqlite3.0", "c++"
   
     ss.vendored_frameworks =  "BaiduMapKit/BaiduMapAPI_Utils.framework"
     ss.vendored_libraries = "BaiduMapKit/thirdlibs/*.a"
